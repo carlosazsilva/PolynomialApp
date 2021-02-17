@@ -57,6 +57,7 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 * [Methods](#methods)
 
 > Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+
 > Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
 ### Contructors
@@ -70,6 +71,7 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
     public Polynomial(params int[] coef)
 
 > O grau de cada termo será o respetivo índice no vetor coef recebido como argumento
+
 > No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
