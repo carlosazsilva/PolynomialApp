@@ -115,9 +115,34 @@ Método que cria uma “cópia” do Polinómio.
 
 ###### Nota: terá que se criado um novo polinómio, não uma referência para o polinómio existente.
 
+Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio:
 
+    public static Polinomio operator + (Polinomio p1, Polinomio p2)
 
-- [ ] this is an incomplete item
+Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio:
+
+    public static Polinomio operator - (Polinomio p1, Polinomio p2)
+
+Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio:
+
+    public static Polinomio operator * (Polinomio p1, Polinomio p2)
+
+Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio:
+
+    public static Polinomio operator * (Polinomio p1, int escalar)
+
+## Checklist
+### PART I
+#### Constructors
+- [ ] 
+#### Properties
+- [ ] 
+#### Methods
+- [ ]
+### PART II
+- [ ]
+### PART III
+- [ ]
 
 <!-- Unordered and ordered list -->
 <!-- * ul -->
