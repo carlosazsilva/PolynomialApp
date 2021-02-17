@@ -66,9 +66,9 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 ### Contructors
 
-Constructor | Action
------------ | ------
-`Polynomial` | Default constructor.
+Constructor                            | Action
+-------------------------------------- | ------
+`Polynomial()`                         | Default constructor.
 `public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>O grau de cada termo será o respetivo índice no vetor coef recebido como argumento.<br>No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 &nbsp;
@@ -77,9 +77,9 @@ Constructor | Action
 
 Property                 | Action
 ------------------------ | ------
-`public int Grau`        | Gets the polynomial degree.
-`public int NumTermos`   | Gets the number of terms of the polynomial.
-`public bool IsCompleto` | Gets wheter the polynomial is complete or not.
+`public int Degree`      | Gets the polynomial degree.
+`public int NumTerms`    | Gets the number of terms of the polynomial.
+`public bool IsComplete` | Gets wheter the polynomial is complete or not.
 
 &nbsp;
 
@@ -114,8 +114,6 @@ O projeto deverá disponibilizar uma CLI para fazer as operações implementa
 
 Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não ser inicialmente tão fácil como os menus, são mais rápidos e intuitivos de utilizar quando o utilizador domina os comandos e os seus argumentos.
 
-> Crie as classes necessárias para melhor organizar o código.
-
 Command | Action
 ------- | ------
 `add -name {nome do polinómio} polinómio` | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por `p1`, `p2` e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>`add -name poli 3x^3+2` – Cria o polinómio `3x^3+2` com o nome `poli`<br>`add 4x^2-3x` – Cria o polinómio `4x^2-3x` com o nome `p1`
@@ -127,19 +125,26 @@ Command | Action
 `clear`| Limpa a consola.
 `exit` | Sai da aplicação.
 
+> Crie as classes necessárias para melhor organizar o código.
+
 &nbsp;
 
 ## Checklist
+
 ### PART I · Development of the Polynomial class
 #### Constructors
 - [ ] `Polynomial()`
 - [ ] `public Polynomial(params int[] coef)`
 #### Properties
-- [ ] task
+- [ ] `public int Degree`
+- [ ] `public int NumTerms`
+- [ ] `public bool IsComplete`
 #### Methods
 - [ ] task
+
 ### PART II · Tests project
 - [ ] task
+
 ### PART III · CLI (Command Line Interface) development
 - [ ] task
 
