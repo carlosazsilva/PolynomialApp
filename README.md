@@ -46,7 +46,7 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 
 * **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
 * **PART II**: [Tests project](#part-ii--tests-project)
-* **PART III**: CLI (Command Line Interface) development
+* **PART III**: [CLI (Command Line Interface) development](#part-iii--cli)
 
 ## PART I · Development of the Polynomial class
 
@@ -139,6 +139,8 @@ Realiza a operação de multiplicação entre um polinómio e um valor inte
 ## PART II · Tests project
 
 Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polinomio. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
+
+## PART III · CLI (Command Line Interface) development
 
 ## Checklist
 ### PART I
