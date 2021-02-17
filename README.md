@@ -9,6 +9,8 @@
 # Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
 
+## The polynomial expression
+
 Em matemática, uma função polinomial (de uma variável/incógnita) é uma **função P** que pode ser expressa da seguinte forma.
 
     P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
