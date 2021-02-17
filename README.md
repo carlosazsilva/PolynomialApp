@@ -60,6 +60,8 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
 
     public Polynomial(params int[] coef)
     
+`<wqwrqwre>`
+
 ###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
@@ -70,18 +72,6 @@ Adds a new term to the polynomial:
     public void AddTerm(int degree, int coef)
     
 ###### Nota: não podem existir dois termos com o mesmo grau
-
-
-<!-- # h1 -->
-<!-- ## h2 -->
-<!-- ### h3 -->
-<!-- #### h4 -->
-<!-- ##### h5 -->
-<!-- ###### h6 -->
-
-<!-- Bold and italic -->
-<!-- *italic* || _italic_ -->
-<!-- **bold** || __bold__ -->
 
 <!-- Unordered and ordered list -->
 <!-- * ul -->
