@@ -45,20 +45,18 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 #### O projeto é composto por 3 partes distintas:
 
 * **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
-* **PART II**: Tests project
+* **PART II**: [Tests project](#part-ii--tests-project)
 * **PART III**: CLI (Command Line Interface) development
 
 ## PART I · Development of the Polynomial class
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos:
 
-> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
-
 * [Constructors](#constructors)
 * [Properties](#properties)
 * [Methods](#methods)
 
-> Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
+> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
 ### Contructors
 
@@ -135,6 +133,12 @@ Realiza a operação de multiplicação de polinómios, devolvendo o result
 Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio:
 
     public static Polinomio operator * (Polinomio p1, int escalar)
+
+> Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
+
+## PART II · Tests project
+
+Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polinomio. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
 
 ## Checklist
 ### PART I
