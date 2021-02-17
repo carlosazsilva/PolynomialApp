@@ -1,11 +1,10 @@
-# PolynomialApp
-RE_Start Developer OOP project
+This challenge was made as the final project of [RE_Start Developer training](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.
 
 ## Challenge Description
 Pretende-se a criação de um programa em C# (PolinomioApp) que permita desenvolver uma calculadora de polinómios usando listas.
 Em matemática, uma função polinomial (de uma variável/incógnita) é uma função P que pode ser expressa da seguinte forma.
 
-*P(x) = a.x^n + b.x^(n-1) + c.x^(n-2) + ... + k.x^1 + l.x^0*
+*P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0*
 
 É uma soma de vários termos, em que n é um número inteiro não negativo (expoente/grau) e os números a, b, c, ..., k, l são constantes (coeficientes).
 
