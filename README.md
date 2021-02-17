@@ -1,11 +1,5 @@
 ###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
 
-#### O projeto é composto por 3 partes distintas:
-
-* **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
-* **PART II**: Tests project
-* **PART III**: CLI (Command Line Interface) development
-
 # Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
 
@@ -45,6 +39,14 @@ Por exemplo: para um polinómio de grau 15 com apenas dois termos (4x^15 – 5x
 Uma alternativa aos vetores, é o uso de listas para a representação computacional de polinómios.
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
+
+# Project
+
+#### O projeto é composto por 3 partes distintas:
+
+* **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
+* **PART II**: Tests project
+* **PART III**: CLI (Command Line Interface) development
 
 ## PART I · Development of the Polynomial class
 
