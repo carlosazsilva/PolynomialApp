@@ -134,15 +134,15 @@ Realiza a operação de multiplicação entre um polinómio e um valor inte
 ## Checklist
 ### PART I
 #### Constructors
-- [ ] 
+- [ ] task
 #### Properties
-- [ ] 
+- [ ] task
 #### Methods
-- [ ]
+- [ ] task
 ### PART II
-- [ ]
+- [ ] task
 ### PART III
-- [ ]
+- [ ] task
 
 <!-- Unordered and ordered list -->
 <!-- * ul -->
