@@ -5,7 +5,7 @@ RE_Start Developer OOP project
 Pretende-se a criação de um programa em C# (PolinomioApp) que permita desenvolver uma calculadora de polinómios usando listas.
 Em matemática, uma função polinomial (de uma variável/incógnita) é uma função P que pode ser expressa da seguinte forma.
 
-(3 x^3 + 2) + (4 x^2 - 3 x)
+*P(x) = a.x^n + b.x^(n-1) + c.x^(n-2) + ... + k.x^1 + l.x^0*
 
 É uma soma de vários termos, em que n é um número inteiro não negativo (expoente/grau) e os números a, b, c, ..., k, l são constantes (coeficientes).
 
