@@ -25,10 +25,10 @@ Polinómio de grau 5 incompleto:
 
 Computacionalmente, existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
 
-Index |   0 | 1&nbsp;&nbsp; |     2&nbsp; |     3&nbsp;&nbsp; |     4&nbsp;&nbsp; |     5 | 6
------ | --- | - | ----- | ----- | ----- | ----- | -----
-Pa(x) | -10 | 3 |     1 |    -3 |     7 |       |
-Pb(x) |  -5 | - |     2 |     - |     - |    -2 |
+Index | 0 | 1 | 2 | 3 | 4 | 5 | 6
+----- | - | - | - | - | - | - | -
+Pa(x) | -10 | 3 | 1 | -3 | 7 | |
+Pb(x) | -5 | - | 2 | - | - | -2 |
 
 <!-- # h1 -->
 <!-- ## h2 -->
