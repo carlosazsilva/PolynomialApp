@@ -54,7 +54,7 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 
 ## PART I · Development of the Polynomial class
 
-Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos:
+Desenvolva a class Polynomial com os seguintes construtores, propriedades e métodos:
 
 * [Constructors](#constructors)
 * [Properties](#properties)
@@ -85,18 +85,18 @@ Property                 | Action
 
 ### Methods
 
-Method                                                            | Action
------------------------------------------------------------------ | ------
-`public void AddTerm(int degree, int coef)`                       | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
-`public void RemoveTermo(int grau)`                               | Método que retira do polinómio o termo de grau igual ao passado por argumento.
-`public double Valor(double x)`                                   | Método que calcula o valor real do polinómio para o argumento recebido.
-`public override string ToString()`                               | Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`.<br>Use o símbolo `^` para indicar expoente; expoente `^1` não deve aparecer na string, tal como o texto `x^0`.
-`public Polinomio ConvertFrom(string strPolinomio)`               | Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
-`public Polinomio Clone()`                                        | Método que cria uma “cópia” do Polinómio.<br>Terá que se criado um novo polinómio, não uma referência para o polinómio.existente.
-`public static Polinomio operator + (Polinomio p1, Polinomio p2)` | Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polinomio operator - (Polinomio p1, Polinomio p2)` | Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polinomio operator * (Polinomio p1, Polinomio p2)` | Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polinomio operator * (Polinomio p1, int escalar)`  | Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio.    
+Method                                                               | Action
+-------------------------------------------------------------------- | ------
+`public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
+`public void RemoveTerm(int grau)`                                   | Método que retira do polinómio o termo de grau igual ao passado por argumento.
+`public double Value(double x)`                                      | Método que calcula o valor real do polinómio para o argumento recebido.
+`public override string ToString()`                                  | Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`.<br>Use o símbolo `^` para indicar expoente; expoente `^1` não deve aparecer na string, tal como o texto `x^0`.
+`public Polynomial ConvertFrom(string strPolynomial)`                | Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
+`public Polynomial Clone()`                                          | Método que cria uma “cópia” do Polinómio.<br>Terá que se criado um novo polinómio, não uma referência para o polinómio.existente.
+`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polynomial operator * (Polynomial p1, int escalar)`   | Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio.    
 
 > Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
@@ -104,7 +104,7 @@ Method                                                            | Action
 
 ## PART II · Tests project
 
-Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polinomio. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
+Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polynomial. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
 
 &nbsp;
 
@@ -140,7 +140,16 @@ Command | Action
 - [ ] `public int NumTerms`
 - [ ] `public bool IsComplete`
 #### Methods
-- [ ] task
+- [ ] `public void AddTerm(int degree, int coef)`
+- [ ] `public void RemoveTerm(int grau)`
+- [ ] `public double Value(double x)`
+- [ ] `public override string ToString()`
+- [ ] `public Polynomial ConvertFrom(string strPolynomial)`
+- [ ] `public Polynomial Clone()`
+- [ ] `public static Polynomial operator + (Polynomial p1, Polynomial p2)`
+- [ ] `public static Polynomial operator - (Polynomial p1, Polynomial p2)`
+- [ ] `public static Polynomial operator * (Polynomial p1, Polynomial p2)`
+- [ ] `public static Polynomial operator * (Polynomial p1, int scalar)`
 
 ### PART II · Tests project
 - [ ] task
