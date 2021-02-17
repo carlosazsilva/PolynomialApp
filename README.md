@@ -1,20 +1,29 @@
-This challenge was made as the final project of [RE_Start Developer training](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.
+*This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
 
 ## Challenge Description
-Pretende-se a criação de um programa em C# (PolinomioApp) que permita desenvolver uma calculadora de polinómios usando listas.
-Em matemática, uma função polinomial (de uma variável/incógnita) é uma função P que pode ser expressa da seguinte forma.
+It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.\
 
-*P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0*
+Em matemática, uma função polinomial (de uma variável/incógnita) é uma **função P** que pode ser expressa da seguinte forma.
 
-É uma soma de vários termos, em que n é um número inteiro não negativo (expoente/grau) e os números a, b, c, ..., k, l são constantes (coeficientes).
+    P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
 
-Uma função P(x) com apenas um termo é também conhecida como monómio, se tiver 2 será um binómio e trinómio se tiver 3 termos. Se tiver 3 ou mais termos, diz-se apenas polinómio.
+* É uma soma de vários termos, em que n é um número inteiro não negativo (expoente/grau) e os números a, b, c, ..., k, l são constantes (coeficientes).
 
-Grau de um polinómio: O grau de um polinómio, não nulo, é dado em função do seu termo de maior grau.
+* Uma função P(x) com apenas um termo é também conhecida como monómio, se tiver 2 será um binómio e trinómio se tiver 3 termos. Se tiver 3 ou mais termos, diz-se apenas polinómio.
 
-Um polinómio pode ser completo ou incompleto: Completo se todos os coeficientes que os constituem são não nulos e incompleto se algum dos coeficientes for zero.
+* Grau de um polinómio: O grau de um polinómio, não nulo, é dado em função do seu termo de maior grau.
+
+* Um polinómio pode ser completo ou incompleto: Completo se todos os coeficientes que os constituem são não nulos e incompleto se algum dos coeficientes for zero.
 
 Polinómio de grau 4 completo:
+
+    P(x) = 7x^4 - 3x^3 + 1x^2 + 3x - 10
+
+Polinómio de grau 5 incompleto:
+
+    P(x) = -2x^5 + 2x^2 - 5
+
+Computacionalmente, existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
 
 <!-- # h1 -->
 <!-- ## h2 -->
