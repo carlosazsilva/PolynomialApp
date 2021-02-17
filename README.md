@@ -52,11 +52,11 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos:
 
+> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+
 * [Constructors](#constructors)
 * [Properties](#properties)
 * [Methods](#methods)
-
-> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
 > Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
@@ -70,9 +70,9 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
 
     public Polynomial(params int[] coef)
 
-> O grau de cada termo será o respetivo índice no vetor coef recebido como argumento
+> o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 
-> No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
+> no Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
 
@@ -94,7 +94,7 @@ Adds a new term to the polynomial:
 
     public void AddTerm(int degree, int coef)
     
-###### Nota: não podem existir dois termos com o mesmo grau
+> não podem existir dois termos com o mesmo grau
 
 Método que retira do polinómio o termo de grau igual ao passado por argumento:
 
@@ -108,7 +108,7 @@ Método que devolve o polinómio na forma de string de acordo com o seguinte f
 
     public override string ToString()
 
-###### Nota: use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”
+> use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”
 
 Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
 
@@ -118,7 +118,7 @@ Método que cria uma “cópia” do Polinómio.
 
     public Polinomio Clone()
 
-###### Nota: terá que se criado um novo polinómio, não uma referência para o polinómio existente.
+> terá que se criado um novo polinómio, não uma referência para o polinómio existente.
 
 Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio:
 
