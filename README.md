@@ -95,11 +95,23 @@ Método que calcula o valor real do polinómio para o argumento recebido:
 
     public double Valor(double x)
 
-Método que devolve o polinómio na forma de string de acordo com o seguinte formato: -2x^5 + 3x^2 – x + 6:
+Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`:
 
     public override string ToString()
 
-###### Nota: use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”.
+###### Nota: use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”
+
+Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
+
+    public Polinomio ConvertFrom(string strPolinomio)
+
+Método que cria uma “cópia” do Polinómio.
+
+    public Polinomio Clone()
+
+###### Nota: terá que se criado um novo polinómio, não uma referência para o polinómio existente.
+
+
 
 - [ ] this is an incomplete item
 
