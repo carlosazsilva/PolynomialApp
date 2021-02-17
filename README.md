@@ -104,7 +104,7 @@ Method                                                               | Action
 
 ## PART II · Tests project
 
-Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polynomial. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
+Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polynomial. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package `Fluent Assertions` juntamente com o `xUnit`.
 
 &nbsp;
 
@@ -114,16 +114,24 @@ O projeto deverá disponibilizar uma CLI para fazer as operações implementa
 
 Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não ser inicialmente tão fácil como os menus, são mais rápidos e intuitivos de utilizar quando o utilizador domina os comandos e os seus argumentos.
 
-Command | Action
-------- | ------
+Command                                   | Action
+----------------------------------------- | ------
 `add -name {nome do polinómio} polinómio` | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por `p1`, `p2` e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>`add -name poli 3x^3+2` – Cria o polinómio `3x^3+2` com o nome `poli`<br>`add 4x^2-3x` – Cria o polinómio `4x^2-3x` com o nome `p1`
-`remove -name {nome do polinómio}` | O nome do polinómio é obrigatório. Remove o polinómio com um determinado nome.
+`remove -name {nome do polinómio}`        | O nome do polinómio é obrigatório. Remove o polinómio com um determinado nome.
 `list` | Lista todos os polinómios criados até ao momento.<br>**Exemplo**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9 x^6 - 3 x^5 + 10 x^2 - 5`
-`save -d {caminho do ficheiro}`| `-d` – parâmetro opcional<br>Permite gravar os polinómios no caminho denominado no parâmetro `d`. Se não for passado um caminho para o ficheiro, deverá ser utilizado um por omissão.
-`read -d {caminho do ficheiro}` | Permite ler os polinómios previamente gravados no caminho especificado ou no caminho por omissão caso o parâmetro `-d` não tenha sido passado.
-`help`| Lista todos os comandos disponíveis com uma breve descrição sobre o que eles fazem.
-`clear`| Limpa a consola.
-`exit` | Sai da aplicação.
+`save -d {caminho do ficheiro}`           | `-d` – parâmetro opcional<br>Permite gravar os polinómios no caminho denominado no parâmetro `d`. Se não for passado um caminho para o ficheiro, deverá ser utilizado um por omissão.
+`read -d {caminho do ficheiro}`           | Permite ler os polinómios previamente gravados no caminho especificado ou no caminho por omissão caso o parâmetro `-d` não tenha sido passado.
+`help`                                    | Lista todos os comandos disponíveis com uma breve descrição sobre o que eles fazem.
+`clear`                                   | Limpa a consola.
+`exit`                                    | Sai da aplicação.
+
+Operation                                                | Example
+-------------------------------------------------------- | ------
+`p1 + p2`                                                | Soma o polinómio p1 ao polinómio p2.<br>**Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
+`p1 - p2`                                                | Subtrai o polinómio p2 ao polinómio p1.<br>**Exemplo**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
+`p1 * p2`                                                | `(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
+`p1 * 2`                                                 | `3x^3+2) * 2 = 6x^3+6``
+`compute -name {nome do polinómio } -value {valor de x}` | Calcula o resultado do polinómio, substituindo o valor de x pelo valor passado no parâmetro `-value`.<br>Faz uso do método `Value(int x)` da classe Polinomio.
 
 > Crie as classes necessárias para melhor organizar o código.
 
