@@ -1,5 +1,11 @@
 *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
 
+### O projeto é composto por 3 partes distintas:
+
+1. Desenvolvimento da classe Polinómio
+1. Projeto de Testes
+1. CLI (Command Line Interface Desenvovimento) desenvolvimento de comandos numa aplicação de consola para interagir com múltiplos polinómios, permitindo efetuar operações entre eles e não só.
+
 ## Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
 
@@ -38,33 +44,31 @@ Uma alternativa aos vetores, é o uso de listas para a representação comput
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
 
-### O projeto é composto por 3 partes distintas:
-
-1. Desenvolvimento da classe Polinómio
-1. Projeto de Testes
-1. CLI (Command Line Interface Desenvovimento) desenvolvimento de comandos numa aplicação de consola para interagir com múltiplos polinómios, permitindo efetuar operações entre eles e não só.
-
 ## 1. Desenvolvimento do classe Polinómio
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos.
 
+###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+
 ### Contructors
 
-    Polynomial()                          :  Default constructor
-    public Polynomial(params int[] coef)  :  Creates a new instance of the Polynomial object with the coefficients as parameters
+    Polynomial()
 
-Construtor que cria um objeto do tipo Polinómio com os coeficientes passados por argumento.
+Default constructor
 
+    public Polynomial(params int[] coef)
+    
+Creates a new instance of the Polynomial object with the coefficients as parameters
 ###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Methods
 
-    public void AddTerm(int degree, int coef)  :  Allows adding a new term to the polynomial
-
+    public void AddTerm(int degree, int coef)
+    
+Adds a new term to the polynomial
 ###### Nota: não podem existir dois termos com o mesmo grau
 
-###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
 <!-- # h1 -->
 <!-- ## h2 -->
