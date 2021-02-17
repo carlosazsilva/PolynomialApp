@@ -48,7 +48,11 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 
 ## PART I · Development of the Polynomial class
 
-Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos.
+Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos:
+
+* [Constructors](#constructors)
+* [Properties](#properties)
+* [Methods](#methods)
 
 ###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
