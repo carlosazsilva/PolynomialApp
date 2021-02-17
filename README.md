@@ -59,8 +59,6 @@ Default constructor:
 Creates a new instance of the Polynomial object with the coefficients as parameters:
 
     public Polynomial(params int[] coef)
-    
-`<wqwrqwre>`
 
 ###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
@@ -72,6 +70,20 @@ Adds a new term to the polynomial:
     public void AddTerm(int degree, int coef)
     
 ###### Nota: não podem existir dois termos com o mesmo grau
+
+Método que retira do polinómio o termo de grau igual ao passado por argumento:
+
+    public void RemoveTermo(int grau)
+
+Método que calcula o valor real do polinómio para o argumento recebido:
+
+    public double Valor(double x)
+
+Método que devolve o polinómio na forma de string de acordo com o seguinte formato: -2x^5 + 3x^2 – x + 6:
+
+    public override string ToString()
+
+###### Nota: use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”.
 
 <!-- Unordered and ordered list -->
 <!-- * ul -->
