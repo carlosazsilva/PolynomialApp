@@ -30,6 +30,22 @@ Index | 0 | 1 | 2 | 3 | 4 | 5 | 6
 Pa(x) | -10 | 3 | 1 | -3 | 7 | |
 Pb(x) | -5 | - | 2 | - | - | -2 |
 
+Esta estratégia tem a vantagem de facilmente se conseguir determinar qual o coeficiente de um determinado termo. No entanto, para polinómios não completos leva a que sejam desperdiçadas posições do vetor que não são usadas (são usadas com coeficiente 0).
+
+Por exemplo: para um polinómio de grau 15 com apenas dois termos (4x^15 – 5x^3) teremos de ter um vetor com 16 posições em que apenas duas vão ter valores significativos para o polinómio.
+
+Uma alternativa aos vetores, é o uso de listas para a representação computacional de polinómios.
+
+Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
+
+O projeto é composto por 3 partes distintas:
+
+1. Desenvolvimento da classe Polinómio
+1. Projeto de Testes
+1. CLI (Command Line Interface Desenvovimento) desenvolvimento de comandos numa aplicação de consola para interagir com múltiplos polinómios, permitindo efetuar operações entre eles e não só.
+
+## 1. Desenvolvimento do código
+
 <!-- # h1 -->
 <!-- ## h2 -->
 <!-- ### h3 -->
