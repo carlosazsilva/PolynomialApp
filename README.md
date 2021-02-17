@@ -60,8 +60,8 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 ### Contructors
 
-Contructor | Action
----------- | ------
+Constructor | Action
+----------- | ------
 `Polynomial` | Default constructor
 `public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters
 
@@ -70,6 +70,12 @@ Contructor | Action
 > no Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
+
+Property                 | Action
+------------------------ | ------
+`public int Grau`        | Gets the polynomial degree
+`public int NumTermos`   | Gets the number of terms of the polynomial
+`public bool IsCompleto` | Gets wheter the polynomial is complete or not
 
 Propriedade de leitura que devolve o grau do Polinómio:
 
