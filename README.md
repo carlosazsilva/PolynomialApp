@@ -62,80 +62,31 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 Constructor | Action
 ----------- | ------
-`Polynomial` | Default constructor
-`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters
-
-> o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
-
-> no Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
+`Polynomial` | Default constructor.
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>O grau de cada termo será o respetivo índice no vetor coef recebido como argumento.<br>No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
 
 Property                 | Action
 ------------------------ | ------
-`public int Grau`        | Gets the polynomial degree
-`public int NumTermos`   | Gets the number of terms of the polynomial
-`public bool IsCompleto` | Gets wheter the polynomial is complete or not
-
-Propriedade de leitura que devolve o grau do Polinómio:
-
-    public int Grau
-
-Propriedade de leitura que devolve o número de termos que o Polinómio tem:
-
-    public int NumTermos
-
-Propriedade que indica se um determinado polinómio é ou não completo:
-
-    public bool IsCompleto
+`public int Grau`        | Gets the polynomial degree.
+`public int NumTermos`   | Gets the number of terms of the polynomial.
+`public bool IsCompleto` | Gets wheter the polynomial is complete or not.
 
 ### Methods
 
-Adds a new term to the polynomial:
-
-    public void AddTerm(int degree, int coef)
-    
-> não podem existir dois termos com o mesmo grau
-
-Método que retira do polinómio o termo de grau igual ao passado por argumento:
-
-    public void RemoveTermo(int grau)
-
-Método que calcula o valor real do polinómio para o argumento recebido:
-
-    public double Valor(double x)
-
-Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`:
-
-    public override string ToString()
-
-> use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”
-
-Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
-
-    public Polinomio ConvertFrom(string strPolinomio)
-
-Método que cria uma “cópia” do Polinómio.
-
-    public Polinomio Clone()
-
-> terá que se criado um novo polinómio, não uma referência para o polinómio existente.
-
-Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio:
-
-    public static Polinomio operator + (Polinomio p1, Polinomio p2)
-
-Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio:
-
-    public static Polinomio operator - (Polinomio p1, Polinomio p2)
-
-Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio:
-
-    public static Polinomio operator * (Polinomio p1, Polinomio p2)
-
-Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio:
-
-    public static Polinomio operator * (Polinomio p1, int escalar)
+Method                                                            | Action
+----------------------------------------------------------------- | ------
+`public void AddTerm(int degree, int coef)`                       | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
+`public void RemoveTermo(int grau)`                               | Método que retira do polinómio o termo de grau igual ao passado por argumento.
+`public double Valor(double x)`                                   | Método que calcula o valor real do polinómio para o argumento recebido.
+`public override string ToString()`                               | Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`.<br>Use o símbolo `^` para indicar expoente; expoente `^1` não deve aparecer na string, tal como o texto `x^0`.
+`public Polinomio ConvertFrom(string strPolinomio)`               | Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
+`public Polinomio Clone()`                                        | Método que cria uma “cópia” do Polinómio.<br>Terá que se criado um novo polinómio, não uma referência para o polinómio.existente.
+`public static Polinomio operator + (Polinomio p1, Polinomio p2)` | Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polinomio operator - (Polinomio p1, Polinomio p2)` | Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polinomio operator * (Polinomio p1, Polinomio p2)` | Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio.
+`public static Polinomio operator * (Polinomio p1, int escalar)`  | Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio.    
 
 > Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
