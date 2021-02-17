@@ -50,7 +50,7 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 ###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
-### Contructors
+### 1.1 - Contructors
 
 Default constructor:
 
@@ -63,7 +63,9 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
 ###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
-### Methods
+### 1.2. Properties
+
+### 1.3. Methods
 
 Adds a new term to the polynomial:
 
