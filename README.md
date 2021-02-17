@@ -134,7 +134,8 @@ Realiza a operação de multiplicação entre um polinómio e um valor inte
 ## Checklist
 ### PART I
 #### Constructors
-- [ ] task
+- [ ] Polynomial()
+- [ ] public Polynomial(params int[] coef)
 #### Properties
 - [ ] task
 #### Methods
