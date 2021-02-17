@@ -2,7 +2,7 @@
 
 #### O projeto é composto por 3 partes distintas:
 
-* **PART I**: [The development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
+* **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
 * **PART II**: Tests project
 * **PART III**: CLI (Command Line Interface) development
 
