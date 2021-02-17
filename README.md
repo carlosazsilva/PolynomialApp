@@ -2,9 +2,9 @@
 
 #### O projeto é composto por 3 partes distintas:
 
-* PART I · [The development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
-* PART II · Tests project
-* PART III · CLI (Command Line Interface) development
+* **PART I**: [The development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
+* **PART II**: Tests project
+* **PART III**: CLI (Command Line Interface) development
 
 # Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
