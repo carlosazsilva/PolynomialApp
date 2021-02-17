@@ -151,6 +151,13 @@ Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não 
 Command | Action
 ------- | ------
 `add -name {nome do polinómio} polinómio` | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por `p1`, `p2` e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>`add -name poli 3x^3+2` – Cria o polinómio `3x^3+2` com o nome `poli`<br>`add 4x^2-3x` – Cria o polinómio `4x^2-3x` com o nome `p1`
+`remove -name {nome do polinómio}` | O nome do polinómio é obrigatório. Remove o polinómio com um determinado nome.
+`list` | Lista todos os polinómios criados até ao momento.<br>**Exemplo**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9 x^6 - 3 x^5 + 10 x^2 - 5`
+`save -d {caminho do ficheiro}`| `-d` – parâmetro opcional<br>Permite gravar os polinómios no caminho denominado no parâmetro `d`. Se não for passado um caminho para o ficheiro, deverá ser utilizado um por omissão.
+`read -d {caminho do ficheiro}` | Permite ler os polinómios previamente gravados no caminho especificado ou no caminho por omissão caso o parâmetro `-d` não tenha sido passado.
+`help`| Lista todos os comandos disponíveis com uma breve descrição sobre o que eles fazem.
+`clear`| Limpa a consola.
+`exit` | Sai da aplicação.
 
 ## Checklist
 ### PART I
