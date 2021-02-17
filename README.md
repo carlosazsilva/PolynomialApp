@@ -40,6 +40,8 @@ Uma alternativa aos vetores, é o uso de listas para a representação comput
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
 
+&nbsp;
+
 # Polynomial App
 
 #### O projeto é composto por 3 partes distintas:
@@ -47,6 +49,8 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 * **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
 * **PART II**: [Tests project](#part-ii--tests-project)
 * **PART III**: [CLI (Command Line Interface) development](#part-iii--cli-command-line-interface-development)
+
+&nbsp;
 
 ## PART I · Development of the Polynomial class
 
@@ -58,12 +62,16 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 > Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
+&nbsp;
+
 ### Contructors
 
 Constructor | Action
 ----------- | ------
 `Polynomial` | Default constructor.
 `public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>O grau de cada termo será o respetivo índice no vetor coef recebido como argumento.<br>No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
+
+&nbsp;
 
 ### Properties
 
@@ -72,6 +80,8 @@ Property                 | Action
 `public int Grau`        | Gets the polynomial degree.
 `public int NumTermos`   | Gets the number of terms of the polynomial.
 `public bool IsCompleto` | Gets wheter the polynomial is complete or not.
+
+&nbsp;
 
 ### Methods
 
@@ -90,9 +100,13 @@ Method                                                            | Action
 
 > Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
+&nbsp;
+
 ## PART II · Tests project
 
 Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polinomio. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package Fluent Assertions juntamente com o xUnit.
+
+&nbsp;
 
 ## PART III · CLI (Command Line Interface) development
 
@@ -113,8 +127,10 @@ Command | Action
 `clear`| Limpa a consola.
 `exit` | Sai da aplicação.
 
+&nbsp;
+
 ## Checklist
-### PART I
+### PART I · Development of the Polynomial class
 #### Constructors
 - [ ] `Polynomial()`
 - [ ] `public Polynomial(params int[] coef)`
@@ -122,9 +138,9 @@ Command | Action
 - [ ] task
 #### Methods
 - [ ] task
-### PART II
+### PART II · Tests project
 - [ ] task
-### PART III
+### PART III · CLI (Command Line Interface) development
 - [ ] task
 
 <!-- Unordered and ordered list -->
