@@ -1,12 +1,12 @@
 *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
 
-### O projeto é composto por 3 partes distintas:
+#### O projeto é composto por 3 partes distintas:
 
 1. Development of the Polynomial class
 1. Tests project
 1. CLI (Command Line Interface) development
 
-## Challenge Description
+# Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
 
 Em matemática, uma função polinomial (de uma variável/incógnita) é uma **função P** que pode ser expressa da seguinte forma.
