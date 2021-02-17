@@ -124,9 +124,7 @@ Command                                   | Action
 `help`                                    | Lista todos os comandos disponíveis com uma breve descrição sobre o que eles fazem.
 `clear`                                   | Limpa a consola.
 `exit`                                    | Sai da aplicação.
-
-Operation                                                | Example
--------------------------------------------------------- | ------
+Operation                                                | 
 `p1 + p2`                                                | Soma o polinómio p1 ao polinómio p2.<br>**Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
 `p1 - p2`                                                | Subtrai o polinómio p2 ao polinómio p1.<br>**Exemplo**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                                | `(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
