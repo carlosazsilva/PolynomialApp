@@ -2,9 +2,9 @@
 
 #### O projeto é composto por 3 partes distintas:
 
-1. [Development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
-1. Tests project
-1. CLI (Command Line Interface) development
+* PART I · [Development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
+* PART II · Tests project
+* PART III · CLI (Command Line Interface) development
 
 # Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
@@ -46,13 +46,13 @@ Uma alternativa aos vetores, é o uso de listas para a representação comput
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
 
-## 1. Development of the Polynomial class
+## PART I · Development of the Polynomial class
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos.
 
 ###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
-### 1.1 - Contructors
+### Contructors
 
 Default constructor:
 
