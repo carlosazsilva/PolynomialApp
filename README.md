@@ -48,19 +48,23 @@ Pretende-se com este projeto que os formandos desenvolvam uma alicação para 
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos.
 
-###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
-###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento.
+### Contructors
+
+    Polynomial()                          :  Default constructor
+    public Polynomial(params int[] coef)  :  Creates a new instance of the Polynomial object with the coefficients as parameters
+
+Construtor que cria um objeto do tipo Polinómio com os coeficientes passados por argumento.
+
+###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
-###### Nota: não podem existir dois termos com o mesmo grau.
 
-Contructors | Actions
-------------| -------
-Polynomial() | Default constructor
-public Polinomio(params int[] coef) | Construtor que cria um objeto do tipo Polinómio com os coeficientes passados por argumento.
+### Methods
 
-Methods | Actions
-------- | -------
-public void AddTermo(int grau, int coef) | Método que permite acrescentar um novo termo ao polinómio.
+    public void AddTerm(int degree, int coef)  :  Allows adding a new term to the polynomial
+
+###### Nota: não podem existir dois termos com o mesmo grau
+
+###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
 
 <!-- # h1 -->
 <!-- ## h2 -->
