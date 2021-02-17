@@ -1,39 +1,32 @@
 # PolynomialApp
 RE_Start Developer OOP project
 
-# This is an <h1> tag
-## This is an <h2> tag
-###### This is an <h6> tag
+# Descrição do Desafio
+Pretende-se a criação de um programa em C# (PolinomioApp) que permita desenvolver uma calculadora de polinómios usando listas.
+Em matemática, uma função polinomial (de uma variável/incógnita) é uma função P que pode ser expressa da seguinte forma.
 
-*This text will be italic*
-_This will also be italic_
+<!-- # h1 -->
+<!-- ## h2 -->
+<!-- ### h3 -->
+<!-- #### h4 -->
+<!-- ##### h5 -->
+<!-- ###### h6 -->
 
-**This text will be bold**
-__This will also be bold__
+<!-- *italic* || _italic_ -->
+<!-- **bold** || __bold__ -->
 
-_You **can** combine them_
+<!-- * ul -->
+<!-- 1. ol -->
 
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b
+<!-- ![GitHub Logo](/images/logo.png) -->
+<!-- Format: ![Alt Text](url) -->
 
-1. Item 1
-1. Item 2
-1. Item 3
-   1. Item 3a
-   1. Item 3b
+<!-- http://github.com - automatic! -->
+<!-- [GitHub](http://github.com) -->
 
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-As Kanye West said:
-
+<!-- Quote -->
 > We're living the future so
 > the present is our past.
 
-I think you should use an
-`<addr>` element here instead.
+<!-- Code -->
+<!-- `<addr>` element here instead. -->
