@@ -2,9 +2,9 @@
 
 ### O projeto é composto por 3 partes distintas:
 
-1. Desenvolvimento da classe Polinómio
-1. Projeto de Testes
-1. CLI (Command Line Interface Desenvovimento) desenvolvimento de comandos numa aplicação de consola para interagir com múltiplos polinómios, permitindo efetuar operações entre eles e não só.
+1. Development of the Polynomial class
+1. Tests project
+1. CLI (Command Line Interface) development
 
 ## Challenge Description
 It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
@@ -44,7 +44,7 @@ Uma alternativa aos vetores, é o uso de listas para a representação comput
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
 
-## 1. Desenvolvimento do classe Polinómio
+## 1. Development of the Polynomial class
 
 Desenvolva a class Polinomio com os seguintes construtores, propriedades e métodos.
 
@@ -84,6 +84,8 @@ Método que devolve o polinómio na forma de string de acordo com o seguinte f
     public override string ToString()
 
 ###### Nota: use o símbolo ^ para indicar expoente; expoente “^1” não deve aparecer na string, tal como o texto “x^0”.
+
+- [ ] this is an incomplete item
 
 <!-- Unordered and ordered list -->
 <!-- * ul -->
