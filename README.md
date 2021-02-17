@@ -2,7 +2,7 @@
 
 #### O projeto é composto por 3 partes distintas:
 
-* PART I · [Development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
+* PART I · [The development of the Polynomial class](https://github.com/carlosazsilva/PolynomialApp#1-development-of-the-polynomial-class)
 * PART II · Tests project
 * PART III · CLI (Command Line Interface) development
 
@@ -65,9 +65,21 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
 ###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 ###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
-### 1.2. Properties
+### Properties
 
-### 1.3. Methods
+Propriedade de leitura que devolve o grau do Polinómio:
+
+    public int Grau
+
+Propriedade de leitura que devolve o número de termos que o Polinómio tem:
+
+    public int NumTermos
+
+Propriedade que indica se um determinado polinómio é ou não completo:
+
+    public bool IsCompleto
+
+### Methods
 
 Adds a new term to the polynomial:
 
