@@ -40,7 +40,7 @@ Uma alternativa aos vetores, é o uso de listas para a representação comput
 
 Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
 
-# Project
+# Polynomial App
 
 #### O projeto é composto por 3 partes distintas:
 
@@ -56,7 +56,8 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 * [Properties](#properties)
 * [Methods](#methods)
 
-###### Nota: Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+> Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
 
 ### Contructors
 
@@ -68,8 +69,8 @@ Creates a new instance of the Polynomial object with the coefficients as paramet
 
     public Polynomial(params int[] coef)
 
-###### Nota 1: o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
-###### Nota 2: No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
+> O grau de cada termo será o respetivo índice no vetor coef recebido como argumento
+> No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
 
