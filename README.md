@@ -60,13 +60,10 @@ Desenvolva a class Polinomio com os seguintes construtores, propriedades e mét
 
 ### Contructors
 
-Default constructor:
-
-    Polynomial()
-
-Creates a new instance of the Polynomial object with the coefficients as parameters:
-
-    public Polynomial(params int[] coef)
+Contructor | Action
+---------- | ------
+`Polynomial` | Default constructor
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters
 
 > o grau de cada termo será o respetivo índice no vetor coef recebido como argumento
 
