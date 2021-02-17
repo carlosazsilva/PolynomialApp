@@ -148,6 +148,10 @@ Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não 
 
 > Crie as classes necessárias para melhor organizar o código.
 
+Command | Action
+------- | ------
+**add** -name {nome do polinómio} polinómio | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por p1, p2 e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>add -name poli 3x^3+2 – Cria o polinómio 3x^3+2 com o nome poli<br>add 4x^2-3x – Cria o polinómio 4x^2-3x com o nome p1
+
 ## Checklist
 ### PART I
 #### Constructors
