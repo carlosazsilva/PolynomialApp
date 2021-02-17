@@ -1,7 +1,7 @@
 *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
 
 ## Challenge Description
-It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.\
+It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
 
 Em matemática, uma função polinomial (de uma variável/incógnita) é uma **função P** que pode ser expressa da seguinte forma.
 
@@ -24,6 +24,11 @@ Polinómio de grau 5 incompleto:
     P(x) = -2x^5 + 2x^2 - 5
 
 Computacionalmente, existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
+
+Index |   0 | 1 |     2 |     3 |     4 |     5 | 6
+----- | --- | - | ----- | ----- | ----- | ----- | -----
+Pa(x) | -10 | 3 |     1 |    -3 |     7 |       |
+Pb(x) |  -5 | - |     2 |     - |     - |    -2 |
 
 <!-- # h1 -->
 <!-- ## h2 -->
