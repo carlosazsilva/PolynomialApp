@@ -25,7 +25,9 @@ Polinómio de grau 5 incompleto:
 
     P(x) = -2x^5 + 2x^2 - 5
 
-Computacionalmente, existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
+## Computationally
+
+Existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
 
 Index | 0 | 1 | 2 | 3 | 4 | 5 | 6
 ----- | - | - | - | - | - | - | -
@@ -132,6 +134,8 @@ Operation                                 |
 > Por exemplo: se o utilizador escrever o comando save `-d` e não passar o caminho do ficheiro, deverá apresentar uma mensagem similar a: O comando `save` está incompleto. Deverá passar o caminho associado ao parâmetro `-d` ou usar o comando `save` sem qualquer parâmetro.
 
 > Se não conseguir decifrar o que o utilizador deseja, deverá ser apresentada a mensagem: Comando não é reconhecido como um comando válido. Digite `help` para visualizar a lista de comandos possíveis.
+
+&nbsp;
 
 ## Dicas e sugestões para a resolução
 
