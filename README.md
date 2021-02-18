@@ -65,14 +65,14 @@ Desenvolva a class Polynomial com os seguintes construtores, propriedades e mé
 ### Contructors
 
 Constructor                            | Action
--------------------------------------- | ------
+:------------------------------------- | :-----
 `Polynomial()`                         | Default constructor.
 `public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>O grau de cada termo será o respetivo índice no vetor coef recebido como argumento.<br>No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
 
 ### Properties
 
 Property                 | Action
------------------------- | ------
+:----------------------- | :-----
 `public int Degree`      | Gets the polynomial degree.
 `public int NumTerms`    | Gets the number of terms of the polynomial.
 `public bool IsComplete` | Gets wheter the polynomial is complete or not.
@@ -80,7 +80,7 @@ Property                 | Action
 ### Methods
 
 Method                                                               | Action
--------------------------------------------------------------------- | ------
+:------------------------------------------------------------------- | :-----
 `public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
 `public void RemoveTerm(int grau)`                                   | Método que retira do polinómio o termo de grau igual ao passado por argumento.
 `public double Value(double x)`                                      | Método que calcula o valor real do polinómio para o argumento recebido.
@@ -109,7 +109,7 @@ O projeto deverá disponibilizar uma CLI para fazer as operações implementa
 Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não ser inicialmente tão fácil como os menus, são mais rápidos e intuitivos de utilizar quando o utilizador domina os comandos e os seus argumentos.
 
 Command                                   | Action
------------------------------------------ | ------
+:---------------------------------------- | :-----
 `add -name {nome do polinómio} polinómio` | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por `p1`, `p2` e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>`add -name poli 3x^3+2` – Cria o polinómio `3x^3+2` com o nome `poli`<br>`add 4x^2-3x` – Cria o polinómio `4x^2-3x` com o nome `p1`
 `remove -name {nome do polinómio}`        | O nome do polinómio é obrigatório. Remove o polinómio com um determinado nome.
 `list` | Lista todos os polinómios criados até ao momento.<br>**Exemplo**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9 x^6 - 3 x^5 + 10 x^2 - 5`
@@ -171,20 +171,3 @@ Operation                                 |
 
 ### PART III · CLI (Command Line Interface) development
 - [ ] task
-
-<!-- Unordered and ordered list -->
-<!-- * ul -->
-<!-- 1. ol -->
-
-<!-- ![GitHub Logo](/images/logo.png) -->
-<!-- Format: ![Alt Text](url) -->
-
-<!-- http://github.com - automatic! -->
-<!-- [GitHub](http://github.com) -->
-
-<!-- Quote -->
-<!-- > We're living the future so -->
-<!-- > the present is our past. -->
-
-<!-- Code -->
-<!-- `<addr>` element here instead. -->
