@@ -114,8 +114,8 @@ A CLI offers great flexibility in performing commands. Although as first not as 
 
 Command                                   | Action
 :---------------------------------------- | :-----
-`add -name {nome do polinómio} polinómio` | The name paramenter is optional. If not provided, the app should name the expression by default, starting with `p1`, `p2` and so on, without repetition. **Examples**:<br>`add -name poli 3x^3+2` – adds the polynomial `3x^3+2` with the name `poli`<br>`add 4x^2-3x` – adds the polynomial `4x^2-3x` with the name `p1`
-`remove -name {nome do polinómio}`        | The name of the polynomial expression is requires. Removes the expression from the list.
+`add -name {name} polynomial`             | The name paramenter is optional. If not provided, the app should name the expression by default, starting with `p1`, `p2` and so on, without repetition. **Examples**:<br>`add -name poli 3x^3+2` – adds the polynomial `3x^3+2` with the name `poli`<br>`add 4x^2-3x` – adds the polynomial `4x^2-3x` with the name `p1`
+`remove -name {name}`                     | The name of the polynomial expression is requires. Removes the expression from the list.
 `list`                                    | Lists all polynomial expression create up until this moment. **Example**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9x^6-3x^5+10x^2-5`
 `save -d {caminho do ficheiro}`           | Saves the list of polynomial expressions on a specific path or, in case of the omission of the `-d` parameter, on the default path `/bin/Debug/net5.0/polynomials.json`.
 `read -d {caminho do ficheiro}`           | Reads a list of polynomial expressions from a file on a specific path or, in case of the omission of the `-d` parameter, on the default path.
@@ -126,7 +126,7 @@ Command                                   | Action
 `p1 - p2`                                 | Subtracts the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                 | Multiplies the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
 `p1 * 2`                                  | Multiplies the polynomial expression p1 by an integer. **Example**:<br>`3x^3+2) * 2 = 6x^3+6`
-`compute -name {name} -value {x}`         | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter.<br>Uses the `Value(int x)` method of the Polynomial class.
+`compute -name {name} -value {x}`         | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter. Uses the `Value(int x)` method of the Polynomial class.
 
 * Create the required classes to better organize the code.
 
