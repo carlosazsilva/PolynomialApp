@@ -127,7 +127,7 @@ Operation                                 |
 `p1 - p2`                                 | Subtracts the polynomial expressions p1 and p2.<br>**Example**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                 | `(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
 `p1 * 2`                                  | `3x^3+2) * 2 = 6x^3+6`
-`compute -name {nome do polinómio } -value {valor de x}` | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter.<br>Uses the `Value(int x)` method of the Polynomial class.
+`compute -name {name} -value {x}`         | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter.<br>Uses the `Value(int x)` method of the Polynomial class.
 
 * Create the required classes to better organize the code.
 
