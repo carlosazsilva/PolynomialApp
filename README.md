@@ -96,13 +96,13 @@ Method                                                               | Action
 `public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer, returning the result as a new polynomial expression.    
 
-> The errors must be handled to ensure the application doesn’t close abruptly.
+* Errors must be handled to ensure the application doesn’t close abruptly.
 
 &nbsp;
 
 ## PART II · Tests project
 
-Crie um projeto de testes que permita testar cada uma das funcionalidades implementadas na classe Polynomial. Deverá haver pelo menos um teste para cada construtor, propriedade e método. Poderá usar a package `Fluent Assertions` juntamente com o `xUnit`.
+Create a tests project that allows testing each one of the functionalities implemented in the Polynomial class. There should be at least one test for each constructor, property and method. You can use the `Fluent Assertions` in conjunction with the `xUnit` package.
 
 &nbsp;
 
