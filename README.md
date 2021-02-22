@@ -1,46 +1,48 @@
-###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
+###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module. It's an academic project made with no real intent.*
 
 # Challenge Description
-It's intended the creation of a program in C# (PolynomialApp) that allows the development of a calculator of polynomials using lists.
+The intent of the project was the creation of a console application in C# (PolynomialApp) that allows the manipulation of polynomials using lists.
 
 ## The polynomial expression
 
-Em matemática, uma função polinomial (de uma variável/incógnita) é uma **função P** que pode ser expressa da seguinte forma.
+In mathematics, a polynomial expression is a **function P** that can be written in the following way:
 
     P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
 
-* É uma soma de vários termos, em que n é um número inteiro não negativo (expoente/grau) e os números a, b, c, ..., k, l são constantes (coeficientes).
+* It's the sum of several terms, in which *n* is an non-negative integer (exponent/degree) and the number a, b, c, ..., k, l are constants (coefficients).
 
-* Uma função P(x) com apenas um termo é também conhecida como monómio, se tiver 2 será um binómio e trinómio se tiver 3 termos. Se tiver 3 ou mais termos, diz-se apenas polinómio.
+* The function P(x) with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
 
-* Grau de um polinómio: O grau de um polinómio, não nulo, é dado em função do seu termo de maior grau.
+* The degree of a polynomial is a non-null value given by the term with the higher degree.  
 
-* Um polinómio pode ser completo ou incompleto: Completo se todos os coeficientes que os constituem são não nulos e incompleto se algum dos coeficientes for zero.
+* A polynomial expression can be complete or incomplete. Complete if all its coefficients are non-null and incomplete if any of them is zero.
 
-Polinómio de grau 4 completo:
+Complete 4th degree polynomial expression:
 
     P(x) = 7x^4 - 3x^3 + 1x^2 + 3x - 10
 
-Polinómio de grau 5 incompleto:
+Incomplete 5th degree polynomial expression:
 
     P(x) = -2x^5 + 2x^2 - 5
 
 ## Computationally
 
-Existem algumas estratégias para a representação e manuseamento de polinómios, sendo a mais conhecida o uso de vetores, para armazenar diferentes coeficientes do polinómio. Os polinómios representados anteriormente, poderiam ter a seguinte representação computacional (usando vetores).
+There are some strategies to represent and handle polynomial expressions, being the most common the use of arrays to store different coefficients of the polynomial. The previous polynomial expression could have the following computational representation using arrays.
 
 Index | 0 | 1 | 2 | 3 | 4 | 5 | 6
 ----- | - | - | - | - | - | - | -
 Pa(x) | -10 | 3 | 1 | -3 | 7 | |
 Pb(x) | -5 | - | 2 | - | - | -2 |
 
-Esta estratégia tem a vantagem de facilmente se conseguir determinar qual o coeficiente de um determinado termo. No entanto, para polinómios não completos leva a que sejam desperdiçadas posições do vetor que não são usadas (são usadas com coeficiente 0).
+This strategy has the advantage of an easy determination of the coefficient of a given term. However, for non-complete polynomial expressions, the array has unused indexes (they have a coefficient of zero). 
 
-Por exemplo: para um polinómio de grau 15 com apenas dois termos (4x^15 – 5x^3) teremos de ter um vetor com 16 posições em que apenas duas vão ter valores significativos para o polinómio.
+For example: given a polynomial expression with degree 15 with just two terms (4x^15 – 5x^3), we will have an array with 16 positions in which only two will have significant values for the polynomial expression.
 
-Uma alternativa aos vetores, é o uso de listas para a representação computacional de polinómios.
+As an alternative to arrays, we can have lists to represent polynomial expressions computationally.
 
-Pretende-se com este projeto que os formandos desenvolvam uma alicação para trabalhar com polinómios com base em listas de termos para representar os polinómios. E que sejam realizadas diversas operações com polinómios de N termos com coeficientes e graus do tipo inteiro.
+## Goal
+
+The purpose of this project was the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with N terms with coefficients and degrees of type integer.
 
 &nbsp;
 
