@@ -31,8 +31,8 @@ There are some strategies to represent and handle polynomial expressions, being 
 
 Index   |   0   |   1   |   2   |   3   |   4   |   5   |   6
 :-----: |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |  :-:  |  :-:
-`Pa(x)` | `-10` | ` 3 ` | ` 1 ` | ` -3` | ` 7 ` | `   ` |  ` `
-`Pb(x)` | ` -5` | `   ` | ` 2 ` | `   ` | `   ` | ` -2` |  ` `
+`Pa(x)` | `-10` | ` 3 ` | ` 1 ` | ` -3` | ` 7 ` |       |
+`Pb(x)` | ` -5` |       | ` 2 ` |       |       | ` -2` |
 
 This strategy has the advantage of an easy determination of the coefficient of a given term. However, for non-complete polynomial expressions, the array has unused indexes (they have a coefficient of zero). 
 
