@@ -1,11 +1,11 @@
 ###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module. It's an academic project made with no real intent.*
 
 # Challenge Description
-The intent of the project was the creation of a console application in C# (PolynomialApp) that allows the manipulation of polynomials using lists.
+The intent of the project is the creation of a console application in C# (PolynomialApp) that allows the manipulation of polynomials using lists.
 
 ## The polynomial expression
 
-In mathematics, a polynomial expression is a **function P** that can be written in the following way:
+In mathematics, a polynomial expression is a ***function P*** that can be written in the following way:
 
     P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
 
@@ -36,19 +36,19 @@ Index   |   0   |   1   |   2   |   3   |   4   |   5   |   6
 
 This strategy has the advantage of an easy determination of the coefficient of a given term. However, for non-complete polynomial expressions, the array has unused indexes (they have a coefficient of zero). 
 
-For example: given a polynomial expression with degree 15 with just two terms (4x^15 – 5x^3), we will have an array with 16 positions in which only two will have significant values for the polynomial expression.
+*For example*: given a polynomial expression with degree 15 with just two terms (4x^15 – 5x^3), we will have an array with 16 positions in which only two will have significant values for the polynomial expression.
 
 As an alternative to arrays, we can have lists to represent polynomial expressions computationally.
 
 ## Goal
 
-The purpose of this project was the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with N terms with coefficients and degrees of type integer.
+The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with N terms with coefficients and degrees of type integer.
 
 &nbsp;
 
 # The Polynomial App
 
-#### O projeto é composto por 3 partes distintas:
+#### This project is made up of three different parts:
 
 * **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
 * **PART II**: [Tests project](#part-ii--tests-project)
@@ -58,20 +58,21 @@ The purpose of this project was the development of an application to work with p
 
 ## PART I · Development of the Polynomial class
 
-Desenvolva a class Polynomial com os seguintes construtores, propriedades e métodos:
+Development of the Polynomial class with the following constructors, properties and methods:
 
 * [Constructors](#constructors)
 * [Properties](#properties)
 * [Methods](#methods)
 
-> Poderão ser criados métodos adicionais para criar o código mais limpo e legível.
+> Additional methods can be created to make the code cleaner and more readable.
 
 ### Contructors
 
 Constructor                            | Action
 :------------------------------------- | :-----
 `Polynomial()`                         | Default constructor.
-`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>O grau de cada termo será o respetivo índice no vetor coef recebido como argumento.<br>No Polinómio não deverão existir nunca termos com coeficiente = 0 (zero)
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>The degree of each term is its respective index in the array.<br>Terms with 0 valued coefficients are not allowed.
+`public Polynomial(string polynomial)` | Creates a new instance of the Polynomial object based on a string.
 
 ### Properties
 
@@ -89,7 +90,6 @@ Method                                                               | Action
 `public void RemoveTerm(int grau)`                                   | Método que retira do polinómio o termo de grau igual ao passado por argumento.
 `public double Value(double x)`                                      | Método que calcula o valor real do polinómio para o argumento recebido.
 `public override string ToString()`                                  | Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`.<br>Use o símbolo `^` para indicar expoente; expoente `^1` não deve aparecer na string, tal como o texto `x^0`.
-`public Polynomial ConvertFrom(string strPolynomial)`                | Converte uma string num polinómio. O método deve lançar uma exceção caso não consiga converter a string num polinómio.
 `public Polynomial Clone()`                                          | Método que cria uma “cópia” do Polinómio.<br>Terá que se criado um novo polinómio, não uma referência para o polinómio.existente.
 `public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio.
