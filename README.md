@@ -122,7 +122,6 @@ Command                                   | Action
 `help`                                    | List all available commands with a brief description of their functionality.
 `clear`                                   | Clears the console.
 `exit`                                    | Closes the application.
-Operation                                 | 
 `p1 + p2`                                 | Adds the polynomial expressions p1 and p2.<br>**Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
 `p1 - p2`                                 | Subtracts the polynomial expressions p1 and p2.<br>**Example**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                 | `(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
