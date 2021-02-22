@@ -71,8 +71,8 @@ Development of the Polynomial class with the following constructors, properties 
 Constructor                            | Action
 :------------------------------------- | :-----
 `Polynomial()`                         | Default constructor.
-`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial object with the coefficients as parameters.<br>The degree of each term is its respective index in the array.<br>Terms with 0 valued coefficients are not allowed.
-`public Polynomial(string polynomial)` | Creates a new instance of the Polynomial object based on a string.
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial class the parameters as its coefficients.<br>The degree of each term is given by its respective index in the array.<br>Terms with 0 valued coefficients are not allowed.
+`public Polynomial(string polynomial)` | Creates a new instance of the Polynomial class based on a string.
 
 ### Properties
 
@@ -80,23 +80,23 @@ Property                 | Action
 :----------------------- | :-----
 `public int Degree`      | Gets the polynomial degree.
 `public int NumTerms`    | Gets the number of terms of the polynomial.
-`public bool IsComplete` | Gets wheter the polynomial is complete or not.
+`public bool IsComplete` | Gets whether the polynomial is complete or not.
 
 ### Methods
 
 Method                                                               | Action
 :------------------------------------------------------------------- | :-----
 `public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
-`public void RemoveTerm(int grau)`                                   | Método que retira do polinómio o termo de grau igual ao passado por argumento.
-`public double Value(double x)`                                      | Método que calcula o valor real do polinómio para o argumento recebido.
-`public override string ToString()`                                  | Método que devolve o polinómio na forma de string de acordo com o seguinte formato: `-2x^5 + 3x^2 – x + 6`.<br>Use o símbolo `^` para indicar expoente; expoente `^1` não deve aparecer na string, tal como o texto `x^0`.
-`public Polynomial Clone()`                                          | Método que cria uma “cópia” do Polinómio.<br>Terá que se criado um novo polinómio, não uma referência para o polinómio.existente.
-`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Realiza a operação de soma de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Realiza a operação de subtração de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Realiza a operação de multiplicação de polinómios, devolvendo o resultado como um novo Polinómio.
-`public static Polynomial operator * (Polynomial p1, int escalar)`   | Realiza a operação de multiplicação entre um polinómio e um valor inteiro, devolvendo o resultado como um novo Polinómio.    
+`public void RemoveTerm(int grau)`                                   | Removes of the polynomial expression the term with degree that equal the argument.
+`public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
+`public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as the text `x^0`.
+`public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
+`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Add two polynomial expressions, returning the result as a new polynomial expression.
+`public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions, returning the result as a new polynomial expression.
+`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions, returning the result as a new polynomial expression.
+`public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer, returning the result as a new polynomial expression.    
 
-> Os erros devem ser tratados de forma a garantir que a aplicação não termina de forma abrupta.
+> The errors must be handled to ensure the application doesn’t close abruptly.
 
 &nbsp;
 
@@ -147,33 +147,3 @@ Operation                                 |
 * Utilize o site [WolframAlpha](https://www.wolframalpha.com/) para validar os seus resultados e implementar os testes.
 * Antes de passar para a implementação, certifique-se que entende o que é para fazer, esclarecendo as suas dúvidas.
 * Utilize `try..catch` para o tratamento de erros.
-
-&nbsp;
-
-## Checklist
-
-### PART I · Development of the Polynomial class
-#### Constructors
-- [ ] `Polynomial()`
-- [ ] `public Polynomial(params int[] coef)`
-#### Properties
-- [ ] `public int Degree`
-- [ ] `public int NumTerms`
-- [ ] `public bool IsComplete`
-#### Methods
-- [ ] `public void AddTerm(int degree, int coef)`
-- [ ] `public void RemoveTerm(int grau)`
-- [ ] `public double Value(double x)`
-- [ ] `public override string ToString()`
-- [ ] `public Polynomial ConvertFrom(string strPolynomial)`
-- [ ] `public Polynomial Clone()`
-- [ ] `public static Polynomial operator + (Polynomial p1, Polynomial p2)`
-- [ ] `public static Polynomial operator - (Polynomial p1, Polynomial p2)`
-- [ ] `public static Polynomial operator * (Polynomial p1, Polynomial p2)`
-- [ ] `public static Polynomial operator * (Polynomial p1, int scalar)`
-
-### PART II · Tests project
-- [ ] task
-
-### PART III · CLI (Command Line Interface) development
-- [ ] task
