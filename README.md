@@ -119,7 +119,7 @@ Command                                   | Action
 `list`                                           | Lists all polynomial expression create up until this moment. **Example**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9x^6-3x^5+10x^2-5`
 `save` `-d` `{file path}`                        | Saves the list of polynomial expressions on a specific path or, in case of the omission of the `-d` parameter, on the default path `/bin/Debug/net5.0/polynomials.json`.
 `read` `-d` `{file path}`                        | Reads a list of polynomial expressions from a file on a specific path or, in case of the omission of the `-d` parameter, on the default path.
-`help`                                           | List all available commands with a brief description of their functionality.
+`help`                                           | Lists all available commands with a brief description of their functionality.
 `clear`                                          | Clears the console.
 `exit`                                           | Closes the application.
 `p1 + p2`                                        | Adds the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
