@@ -66,7 +66,7 @@ Development of the Polynomial class with the following constructors, properties 
 
 > Additional methods can be created to make the code cleaner and more readable.
 
-### Contructors
+### Constructors
 
 Constructor                            | Action
 :------------------------------------- | :-----
