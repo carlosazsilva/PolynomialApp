@@ -86,7 +86,7 @@ Property                 | Action
 
 Method                                                               | Action
 :------------------------------------------------------------------- | :-----
-`public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
+`public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>There cannot be two terms with the same degree.
 `public void RemoveTerm(int grau)`                                   | Removes from the polynomial expression the term with the degree that is equal to the argument.
 `public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
 `public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as well as the text `x^0`.
