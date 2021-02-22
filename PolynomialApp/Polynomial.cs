@@ -16,7 +16,7 @@ namespace PolynomialApp
         /// <summary>
         /// Gets the name of the polynomial expression.
         /// </summary>
-        public string Name { get; }
+        public string Name { get; set; }
 
         /// <summary>
         /// Gets the degree of the polynomial expression.
@@ -50,7 +50,7 @@ namespace PolynomialApp
         /// <summary>
         /// Gets the list of <see cref="Terms"/> of the polynomial expression.
         /// </summary>
-        public List<Term> Terms { get; }
+        public List<Term> Terms { get; set; }
 
         #endregion
 
@@ -90,8 +90,13 @@ namespace PolynomialApp
         /// Initializes a new instance of the <see cref="Polynomial"/> class from a string.
         /// </summary>
         /// <param name="polynomial">The polynomial expression.</param>
-        public Polynomial(string polynomial) : this()
+        public Polynomial(string polynomial, string name = null) : this()
         {
+            if (name != null)
+            {
+                Name = name;
+            }
+
             try
             {
                 char separator = '|';

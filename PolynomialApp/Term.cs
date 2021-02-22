@@ -2,9 +2,11 @@
 {
     public class Term
     {
-        public int Degree { get; }
+        public int Degree { get; set; }
 
-        public int Coefficient { get; }
+        public int Coefficient { get; set; }
+
+        public Term() { }
 
         public Term(int degree, int coef)
         {
