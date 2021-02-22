@@ -42,7 +42,7 @@ namespace PolynomialApp
             CommandHandler();
         }
 
-        private void Header()
+        private static void Header()
         {
             Console.WriteLine("POLYNOMIAL APP");
             Console.WriteLine("--------------");
@@ -88,7 +88,14 @@ namespace PolynomialApp
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine(inputErrorMessage);
+                        if (command[1].Length == 1)
+                        {
+                            Operator(command);
+                        }
+                        else
+                        {
+                            Console.WriteLine(inputErrorMessage);
+                        }
                         break;
                 }
             }
@@ -138,6 +145,11 @@ namespace PolynomialApp
             if (input != null)
             {
                 name = input;
+
+                if (int.TryParse(name[0].ToString(), out int number))
+                {
+                    throw new Exception("The name must start with a letter.");
+                }
 
                 foreach (Polynomial polynomial in Polynomials)
                 {
@@ -355,16 +367,125 @@ namespace PolynomialApp
             }
         }
 
+        private void Operator(string[] command)
+        {
+            string result;
+
+            if (NumPolynomials > 0)
+            {
+                switch (command[1])
+                {
+                    case "+":
+                        result = Sum(command);
+                        break;
+                    case "-":
+                        result = Subtract(command);
+                        break;
+                    case "*":
+                        result = Multiply(command);
+                        break;
+                    default:
+                        result = inputErrorMessage;
+                        break;
+                }
+            }
+            else
+            {
+                result = "Cannot perform operations without polynomial expressions.";
+            }
+
+            Console.WriteLine(result);
+        }
+
+        private string Sum(string[] command)
+        {
+            Polynomial[] polynomials = FindPolynomialsByName(command[0], command[2], out bool exists, out string message);
+
+            return exists ? $"({polynomials[0]}) + ({polynomials[1]}) = {polynomials[0] + polynomials[1]}" : message;
+        }
+
+        private string Subtract(string[] command)
+        {
+            Polynomial[] polynomials = FindPolynomialsByName(command[0], command[2], out bool exists, out string message);
+
+            return exists ? $"({polynomials[0]}) - ({polynomials[1]}) = {polynomials[0] - polynomials[1]}" : message;
+        }
+
+        private string Multiply(string[] command)
+        {
+            if (int.TryParse(command[2], out int value))
+            {
+                Polynomial p1 = new Polynomial();
+
+                bool exists = false;
+
+                foreach (Polynomial polynomial in Polynomials)
+                {
+                    if (command[0] == polynomial.Name)
+                    {
+                        exists = true;
+                        p1 = polynomial;
+                    }
+                }
+
+                return exists ? $"({p1}) * {value} = {p1 * value}" : "Could not find the polynomial expression.";
+            }
+            else
+            {
+                Polynomial[] polynomials = FindPolynomialsByName(command[0], command[2], out bool exist, out string message);
+
+                return exist ? $"({polynomials[0]}) * ({polynomials[1]}) = {polynomials[0] * polynomials[1]}" : message;
+            }
+        }
+
+        private Polynomial[] FindPolynomialsByName(string p1name, string p2name, out bool exist, out string message)
+        {
+            Polynomial p1 = new Polynomial(), p2 = new Polynomial();
+
+            bool p1exists = false, p2exists = false;
+
+            foreach (Polynomial polynomial in Polynomials)
+            {
+                if (p1name == polynomial.Name)
+                {
+                    p1exists = true;
+                    p1 = polynomial;
+                }
+            }
+
+            foreach (Polynomial polynomial in Polynomials)
+            {
+                if (p2name == polynomial.Name)
+                {
+                    p2exists = true;
+                    p2 = polynomial;
+                }
+            }
+
+            if (p1exists && p2exists)
+            {
+                exist = true;
+                message = string.Empty;
+            }
+            else
+            {
+                exist = false;
+                message = "Could not find one or more polynomial expressions on the list.";
+            }
+
+            return new Polynomial[] { p1, p2 };
+        }
+
         private void Help()
         {
-            Console.WriteLine("add -name {name} polynomial       -  add a polynomial expression, -name is optional");
-            Console.WriteLine("remove -name {nome do polinómio}  -  remove a polynomial expression");
-            Console.WriteLine("list                              -  list all polynomial expressions");
-            Console.WriteLine("save -d {path}                    -  save file, -d is opcional");
-            Console.WriteLine("read -d {path}                    -  read from file, -d is opcional");
-            Console.WriteLine("clear                             -  clear the console");
-            Console.WriteLine("compute -name {name} -value {x}   -  resolves the polynomial expression");
-            Console.WriteLine("exit                              -  exit the app");
+            Console.WriteLine("add -name {name} expression      -  add a polynomial expression, -name ... is optional");
+            Console.WriteLine("remove -name {name}              -  remove a polynomial expression");
+            Console.WriteLine("list                             -  list all polynomial expressions");
+            Console.WriteLine("save -d {path}                   -  save file, -d ... is opcional");
+            Console.WriteLine("read -d {path}                   -  read from file, -d ... is opcional");
+            Console.WriteLine("clear                            -  clear the console");
+            Console.WriteLine("compute -name {name} -value {x}  -  resolves the polynomial expression");
+            Console.WriteLine("exit                             -  exit the app");
         }
 
         #endregion
