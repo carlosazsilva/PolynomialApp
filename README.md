@@ -115,7 +115,7 @@ A CLI offers great flexibility in performing commands. Although as first not as 
 
 Command                                   | Action
 :---------------------------------------- | :-----
-`add -name {nome do polinómio} polinómio` | The name paramenter is optional. If not provided, the app should name the expression by default, starting with `p1`, `p2` and so on, without repetition.<br>**Examples**:<br>`add -name poli 3x^3+2` – Adds the polynomial `3x^3+2` with the name `poli`<br>`add 4x^2-3x` – Adds the polynomial `4x^2-3x` with the name `p1`.
+`add -name {nome do polinómio} polinómio` | The name paramenter is optional. If not provided, the app should name the expression by default, starting with `p1`, `p2` and so on, without repetition.<br>**Examples**:<br>* `add -name poli 3x^3+2` – Adds the polynomial `3x^3+2` with the name `poli`<br>* `add 4x^2-3x` – Adds the polynomial `4x^2-3x` with the name `p1`.
 `remove -name {nome do polinómio}`        | The name of the polynomial expression is requires. Removes the expression from the list.
 `list` | Lista todos os polinómios criados até ao momento.<br>**Exemplo**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9 x^6 - 3 x^5 + 10 x^2 - 5`
 `save -d {caminho do ficheiro}`           | Saves the list of polynomial expressions on a specific path or, in case of the omission of the `-d` parameter, on the default path (/bin/Debug/net5.0/polynomials.json).
