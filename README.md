@@ -118,14 +118,14 @@ Command                                   | Action
 `remove` `-name` `{name}`                        | The name of the polynomial expression is requires. Removes the expression from the list.
 `list`                                           | Lists all polynomial expression create up until this moment. **Example**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9x^6-3x^5+10x^2-5`
 `save` `-d` `{file path}`                        | Saves the list of polynomial expressions on a specific path or, in case of the omission of the `-d` parameter, on the default path `/bin/Debug/net5.0/polynomials.json`.
-`read` `-d` `{caminho do ficheiro}`              | Reads a list of polynomial expressions from a file on a specific path or, in case of the omission of the `-d` parameter, on the default path.
+`read` `-d` `{file path}`                        | Reads a list of polynomial expressions from a file on a specific path or, in case of the omission of the `-d` parameter, on the default path.
 `help`                                           | List all available commands with a brief description of their functionality.
 `clear`                                          | Clears the console.
 `exit`                                           | Closes the application.
 `p1 + p2`                                        | Adds the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
 `p1 - p2`                                        | Subtracts the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                        | Multiplies the polynomial expressions p1 and p2. **Example**:<br>`(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
-`p1 * 2`                                         | Multiplies the polynomial expression p1 by an integer. **Example**:<br>`3x^3+2) * 2 = 6x^3+6`
+`p1 * 2`                                         | Multiplies the polynomial expression p1 by an integer. **Example**:<br>`(3x^3+2) * 2 = 6x^3+6`
 `compute` `-name` `{name}` `-value` `{x}`        | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter. Uses the `Value(int x)` method of the Polynomial class.
 
 * Create the required classes to better organize the code.
