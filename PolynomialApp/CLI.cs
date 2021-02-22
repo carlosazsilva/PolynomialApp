@@ -88,7 +88,7 @@ namespace PolynomialApp
                         exit = true;
                         break;
                     default:
-                        Console.WriteLine($"{inputErrorMessage}");
+                        Console.WriteLine(inputErrorMessage);
                         break;
                 }
             }
