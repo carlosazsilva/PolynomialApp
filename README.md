@@ -9,19 +9,19 @@ The intent of the project is the creation of a console application in C# (**Poly
 
     P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
 
-* It's the sum of several terms, in which *n* is an non-negative integer (exponent/degree) and the number **a**, **b**, **c**, ..., **k**, **l** are constants (coefficients).
+* It's the sum of several terms, in which ***n*** is an non-negative integer (exponent/degree) and the number ***a***, ***b***, ***c***, ..., ***k***, ***l*** are constants (coefficients).
 
-* The **function P(x)** with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
+* The ***function P(x)*** with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
 
 * The degree of a polynomial is a non-null value given by the term with the higher degree.  
 
 * A polynomial expression can be complete or incomplete. Complete if all its coefficients are non-null and incomplete if any of them is zero.
 
-Complete 4th degree polynomial expression:
+*Complete 4th degree polynomial expression:*
 
     P(x) = 7x^4 - 3x^3 + 1x^2 + 3x - 10
 
-Incomplete 5th degree polynomial expression:
+*Incomplete 5th degree polynomial expression:*
 
     P(x) = -2x^5 + 2x^2 - 5
 
@@ -48,7 +48,7 @@ The purpose of this project is the development of an application to work with po
 
 # The Polynomial App
 
-#### This project is made up of three different parts:
+This project is made up of three different parts:
 
 * **PART I**: [The development of the Polynomial class](#part-i--development-of-the-polynomial-class)
 * **PART II**: [Tests project](#part-ii--tests-project)
@@ -91,7 +91,7 @@ Method                                                               | Action
 `public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
 `public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as well as the text `x^0`.
 `public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
-`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Add two polynomial expressions, returning the result as a new polynomial expression.
+`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Adds two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer, returning the result as a new polynomial expression.    
