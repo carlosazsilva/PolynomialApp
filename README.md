@@ -1,7 +1,7 @@
 ###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module. It's an academic project made with no real world application.*
 
 # Challenge Description
-The intent of the project is the creation of a console application in C# (PolynomialApp) that allows the manipulation of polynomials using lists.
+The intent of the project is the creation of a console application in ***C# (PolynomialApp)*** that allows the manipulation of polynomials expressions using lists.
 
 ## The polynomial expression
 
