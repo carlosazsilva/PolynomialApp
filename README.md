@@ -1,4 +1,5 @@
-###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module. It's an academic project made with no real intent.*
+###### *This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s OOP module.*
+###### *It's an academic project made with no real world application.*
 
 # Challenge Description
 The intent of the project is the creation of a console application in C# (PolynomialApp) that allows the manipulation of polynomials using lists.
@@ -11,7 +12,7 @@ In mathematics, a polynomial expression is a ***function P*** that can be writte
 
 * It's the sum of several terms, in which *n* is an non-negative integer (exponent/degree) and the number a, b, c, ..., k, l are constants (coefficients).
 
-* The function P(x) with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
+* The **function P(x)** with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
 
 * The degree of a polynomial is a non-null value given by the term with the higher degree.  
 
@@ -42,7 +43,7 @@ As an alternative to arrays, we can have lists to represent polynomial expressio
 
 ## Goal
 
-The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with N terms with coefficients and degrees of type integer.
+The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with `n` terms with coefficients and degrees of type integer.
 
 &nbsp;
 
@@ -87,16 +88,16 @@ Property                 | Action
 Method                                                               | Action
 :------------------------------------------------------------------- | :-----
 `public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>Não podem existir dois termos com o mesmo grau.
-`public void RemoveTerm(int grau)`                                   | Removes of the polynomial expression the term with degree that equal the argument.
+`public void RemoveTerm(int grau)`                                   | Removes from the polynomial expression the term with the degree that is equal to the argument.
 `public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
-`public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as the text `x^0`.
+`public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as well as the text `x^0`.
 `public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
 `public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Add two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions, returning the result as a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer, returning the result as a new polynomial expression.    
 
-* Errors must be handled to ensure the application doesn’t close abruptly.
+> Errors must be handled to ensure the application doesn’t close abruptly.
 
 &nbsp;
 
@@ -108,42 +109,33 @@ Create a tests project that allows testing each one of the functionalities imple
 
 ## PART III · CLI (Command Line Interface) development
 
-O projeto deverá disponibilizar uma CLI para fazer as operações implementadas anteriormente e outras que estão listadas na tabela abaixo.
+The project must present a command-line interface to the user to interact with the previously implemented operations and others, listed below.
 
-Uma CLI apresenta uma grande flexibilidade de efetuar comandos. Apesar de não ser inicialmente tão fácil como os menus, são mais rápidos e intuitivos de utilizar quando o utilizador domina os comandos e os seus argumentos.
+A CLI offers great flexibility in performing commands. Although as first not as easy to interact with as menus, CLIs are faster and more intuitive when the user masters the commands and its arguments.
 
 Command                                   | Action
 :---------------------------------------- | :-----
-`add -name {nome do polinómio} polinómio` | O nome do polinómio é opcional. Se não colocar, o sistema deve dar um nome por omissão, começando por `p1`, `p2` e assim sucessivamente, não podendo haver nomes iguais.<br>**Exemplos**:<br>`add -name poli 3x^3+2` – Cria o polinómio `3x^3+2` com o nome `poli`<br>`add 4x^2-3x` – Cria o polinómio `4x^2-3x` com o nome `p1`
-`remove -name {nome do polinómio}`        | O nome do polinómio é obrigatório. Remove o polinómio com um determinado nome.
+`add -name {nome do polinómio} polinómio` | The name paramenter is optional. If not provided, the app should name the expression by default, starting with `p1`, `p2` and so on, without repetition.<br>**Examples**:<br>`add -name poli 3x^3+2` – Adds the polynomial `3x^3+2` with the name `poli`<br>`add 4x^2-3x` – Adds the polynomial `4x^2-3x` with the name `p1`.
+`remove -name {nome do polinómio}`        | The name of the polynomial expression is requires. Removes the expression from the list.
 `list` | Lista todos os polinómios criados até ao momento.<br>**Exemplo**:<br>`poli: 4x^2-3x`<br>`p1: 12x^5-9x^4+8x^2-6x`<br>`p2: 9 x^6 - 3 x^5 + 10 x^2 - 5`
-`save -d {caminho do ficheiro}`           | `-d` – parâmetro opcional<br>Permite gravar os polinómios no caminho denominado no parâmetro `d`. Se não for passado um caminho para o ficheiro, deverá ser utilizado um por omissão.
-`read -d {caminho do ficheiro}`           | Permite ler os polinómios previamente gravados no caminho especificado ou no caminho por omissão caso o parâmetro `-d` não tenha sido passado.
-`help`                                    | Lista todos os comandos disponíveis com uma breve descrição sobre o que eles fazem.
-`clear`                                   | Limpa a consola.
-`exit`                                    | Sai da aplicação.
+`save -d {caminho do ficheiro}`           | Saves the list of polynomial expressions on a specific path or, in case of the omission of the `-d` parameter, on the default path (/bin/Debug/net5.0/polynomials.json).
+`read -d {caminho do ficheiro}`           | Reads a list of polynomial expressions from a file on a specific path or, in case of the omission of the `-d` parameter, on the default path.
+`help`                                    | List all available commands with a brief description of their functionality.
+`clear`                                   | Clears the console.
+`exit`                                    | Closes the application.
 Operation                                 | 
-`p1 + p2`                                 | Soma o polinómio p1 ao polinómio p2.<br>**Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
-`p1 - p2`                                 | Subtrai o polinómio p2 ao polinómio p1.<br>**Exemplo**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
+`p1 + p2`                                 | Adds the polynomial expressions p1 and p2.<br>**Example**:<br>`(3x^3+2) + (4x^2-3x) = 3x^3+4x^2-3x+2`
+`p1 - p2`                                 | Subtracts the polynomial expressions p1 and p2.<br>**Exemplo**:<br>`(3x^3+2) - (4x^2-3x) = 3x^3-4x^2+3x+2`
 `p1 * p2`                                 | `(3x^3+2) * (4x^2-3x) = 12x^5-9x^4+8x^2-6x`
-`p1 * 2`                                  | `3x^3+2) * 2 = 6x^3+6``
-`compute -name {nome do polinómio } -value {valor de x}` | Calcula o resultado do polinómio, substituindo o valor de x pelo valor passado no parâmetro `-value`.<br>Faz uso do método `Value(int x)` da classe Polinomio.
+`p1 * 2`                                  | `3x^3+2) * 2 = 6x^3+6`
+`compute -name {nome do polinómio } -value {valor de x}` | Resolves the polynomial expression, replacing the value of x with the value passed in the `-value` parameter.<br>Uses the `Value(int x)` method of the Polynomial class.
 
-> Crie as classes necessárias para melhor organizar o código.
+* Create the required classes to better organize the code.
 
-> Sempre que o comando estiver errado ou incompleto, deverá ser apresentada uma mensagem informativa que ajude o utilizador a resolver o problema.
->
-> Por exemplo: se o utilizador escrever o comando save `-d` e não passar o caminho do ficheiro, deverá apresentar uma mensagem similar a: O comando `save` está incompleto. Deverá passar o caminho associado ao parâmetro `-d` ou usar o comando `save` sem qualquer parâmetro.
+* Whenever a command is wrong or incomplete, you should present an informative message that helps the user solve the problem.
 
-> Se não conseguir decifrar o que o utilizador deseja, deverá ser apresentada a mensagem: Comando não é reconhecido como um comando válido. Digite `help` para visualizar a lista de comandos possíveis.
+* *For example*: if the user writes the command `save -d` and doesn’t provide a path, a message similar to this, should be presentes: “The command `save` is incomplete. You should associate a path to the parameter `-d`or just type `save` without any parameter.
 
-&nbsp;
+* If the user intents are not evident, a message should be displayed: “Command not recognized. Type help for the available parameters.”
 
-## Dicas e sugestões para a resolução
-
-* O enunciado do projeto permite que comece a desenvolver o mesmo iterativamente, podendo começar com as funcionalidades mais simples, testando e avançando para as demais. Foque-se em pequenas tarefas que cumulativamente lhe permitam ganhar confiança para as operações mais complexas.
-* Se já desenvolveu algumas funcionalidades da Parte I, alterne e faça testes para garantir que o código que está a fazer está correto.
-* Poderá começar por estruturar o programa (PolinomioApp) com os respetivos projetos de código e testes.
-* Utilize o site [WolframAlpha](https://www.wolframalpha.com/) para validar os seus resultados e implementar os testes.
-* Antes de passar para a implementação, certifique-se que entende o que é para fazer, esclarecendo as suas dúvidas.
-* Utilize `try..catch` para o tratamento de erros.
+* Use the website [WolframAlpha](https://www.wolframalpha.com/) to validate results and to implement the tests.
