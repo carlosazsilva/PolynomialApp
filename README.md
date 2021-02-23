@@ -2,9 +2,6 @@
 
 This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s training course for the OOP module. It's an academic project made with no real world purpose but can be used to make simple operations between polynomial expressions.
 
-# Challenge Description
-The intent of the project is the creation of a console application in C# (**PolynomialApp**) that allows the manipulation of polynomials expressions using lists.
-
 ## The polynomial expression
 
 *In mathematics*, a polynomial expression is a ***function P*** that can be written in the following way:
