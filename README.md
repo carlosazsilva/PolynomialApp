@@ -41,7 +41,7 @@ As an alternative to arrays, we can have lists to represent polynomial expressio
 
 ## Goal
 
-The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also has to possibilitate operations with `n` terms with coefficients and degrees of type integer.
+The purpose of this project is the development of a console application to work with polynomial expressions based on lists of terms to represent them. It also has to possibilitate operations with `n` terms with coefficients and degrees of type integer.
 
 &nbsp;
 
