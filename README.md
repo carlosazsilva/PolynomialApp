@@ -38,7 +38,7 @@ Index   |   0   |   1   |   2   |   3   |   4   |   5   |   6
 
 This strategy has the advantage of an easy determination of the coefficient of a given term. However, for non-complete polynomial expressions, the array has unused indexes (they have a coefficient of zero). 
 
-*For example*: given a polynomial expression with degree 15 with just two terms (4x^15 – 5x^3), we will have an array with 16 positions in which only two will have significant values for the polynomial expression.
+*For example*: given a polynomial expression with degree 15 with just two terms `4x^15 – 5x^3`, we will have an array with 16 positions in which only two will have significant values for the polynomial expression.
 
 As an alternative to arrays, we can have lists to represent polynomial expressions computationally.
 
