@@ -14,7 +14,7 @@ In mathematics, a polynomial expression is a ***function P*** that can be writte
 
 * The degree of a polynomial is a non-null value given by the term with the higher degree.  
 
-* A polynomial expression can be complete or incomplete. Complete if all its coefficients are non-null and incomplete if any of them is zero.
+* A polynomial expression can be complete or incomplete. Complete if all its coefficients are non-null and incomplete if any of them is 0.
 
 Complete 4th degree polynomial expression:
 
