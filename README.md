@@ -70,7 +70,7 @@ Development of the Polynomial class with the following constructors, properties 
 Constructor                            | Action
 :------------------------------------- | :-----
 `Polynomial()`                         | Default constructor.
-`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial class where:<br>· The integers are the coefficients.<br>· The degree is the integer respective index in the array.<br>· Terms with 0 valued coefficients are not allowed.
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial class where:<br>· The integers are the coefficients;<br>· The degree is the integer respective index in the array;<br>· Terms with 0 valued coefficients are not allowed.
 `public Polynomial(string polynomial)` | Creates a new instance of the Polynomial class based on a string.
 
 ### Properties
@@ -85,15 +85,15 @@ Property                 | Action
 
 Method                                                               | Action
 :------------------------------------------------------------------- | :-----
-`public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>There cannot be two terms with the same degree.
+`public void AddTerm(int degree, int coef)`                          | Adds a new term to the polynomial.<br>· There cannot be two terms with the same degree.
 `public void RemoveTerm(int grau)`                                   | Removes from the polynomial expression the term with the degree that is equal to the argument.
 `public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
-`public override string ToString()`                                  | Returns the polynomial expression in a string like this: `-2x^5 + 3x^2 – x + 6`.<br>Use `^` to indicate exponent; The exponent `^1` shouldn’t appear in the string, as well as the text `x^0`.
+`public override string ToString()`                                  | Returns the polynomial expression in a string like this:<br>`-2x^5 + 3x^2 – x + 6`.<br>· Use `^` to indicate exponent;<br>· The exponent `^1` shouldn’t appear in the string, as well as the text `x^0`.
 `public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
-`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Adds two polynomial expressions, returning the result as a new polynomial expression.
-`public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions, returning the result as a new polynomial expression.
-`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions, returning the result as a new polynomial expression.
-`public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer, returning the result as a new polynomial expression.    
+`public static Polynomial operator + (Polynomial p1, Polynomial p2)` | · Adds two polynomial expressions<br>· Returns a new polynomial expression.
+`public static Polynomial operator - (Polynomial p1, Polynomial p2)` | · Subtracts two polynomial expressions<br>· Returns a new polynomial expression.
+`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | · Multiplies two polynomial expressions<br>· Returns a new polynomial.expression.polynomial expression.
+`public static Polynomial operator * (Polynomial p1, int escalar)`   | · Multiplies a polynomial expression with an integer<br>· Returns a new polynomial expression.    
 
 > Errors must be handled to ensure the application doesn’t close abruptly.
 
