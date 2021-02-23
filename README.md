@@ -92,7 +92,7 @@ Method                                                               | Action
 `public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
 `public static Polynomial operator + (Polynomial p1, Polynomial p2)` | · Adds two polynomial expressions<br>· Returns a new polynomial expression.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | · Subtracts two polynomial expressions<br>· Returns a new polynomial expression.
-`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | · Multiplies two polynomial expressions<br>· Returns a new polynomial.expression.polynomial expression.
+`public static Polynomial operator * (Polynomial p1, Polynomial p2)` | · Multiplies two polynomial expressions<br>· Returns a new polynomial expression.
 `public static Polynomial operator * (Polynomial p1, int escalar)`   | · Multiplies a polynomial expression with an integer<br>· Returns a new polynomial expression.    
 
 > Errors must be handled to ensure the application doesn’t close abruptly.
