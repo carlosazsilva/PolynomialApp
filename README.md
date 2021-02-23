@@ -107,7 +107,7 @@ Create a tests project that allows testing each one of the functionalities imple
 
 ## PART III · CLI (Command-line Interface) development
 
-The project must present a command-line interface to the user to interact with the previously implemented operations and others, listed below.
+The project must present the user with a command-line interface to interact with the previously implemented operations and others, listed below.
 
 A CLI offers great flexibility in performing commands. Although as first not as easy to interact with as menus, CLIs are faster and more intuitive when the user masters the commands and its arguments.
 
