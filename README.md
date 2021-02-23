@@ -1,6 +1,6 @@
 # Introduction
 
-This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s training course for the OOP module. It's an academic project made with no real world purpose but can be used to make simple opertions between polynomial expression.
+This challenge was made as the final project of [RE_Start Developer](https://pt.primaverabss.com/pt/formacao-2/acoes-em-destaque/restart/)'s training course for the OOP module. It's an academic project made with no real world purpose but can be used to make simple operations between polynomial expressions.
 
 # Challenge Description
 The intent of the project is the creation of a console application in C# (**PolynomialApp**) that allows the manipulation of polynomials expressions using lists.
@@ -44,7 +44,7 @@ As an alternative to arrays, we can have lists to represent polynomial expressio
 
 ## Goal
 
-The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also had to possibilitate operations with `n` terms with coefficients and degrees of type integer.
+The purpose of this project is the development of an application to work with polynomial expressions based on lists of terms to represent them. It also has to possibilitate operations with `n` terms with coefficients and degrees of type integer.
 
 &nbsp;
 
