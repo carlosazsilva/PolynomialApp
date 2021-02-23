@@ -70,7 +70,7 @@ Development of the Polynomial class with the following constructors, properties 
 Constructor                            | Action
 :------------------------------------- | :-----
 `Polynomial()`                         | Default constructor.
-`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial class where:<br>* The integers are the coefficients.<br>* The degree is its respective index in the array.<br>* Terms with 0 valued coefficients are not allowed.
+`public Polynomial(params int[] coef)` | Creates a new instance of the Polynomial class where:<br>· The integers are the coefficients.<br>· The degree is the integer respective index in the array.<br>· Terms with 0 valued coefficients are not allowed.
 `public Polynomial(string polynomial)` | Creates a new instance of the Polynomial class based on a string.
 
 ### Properties
