@@ -4,11 +4,11 @@ This challenge was made as the final project of [RE_Start Developer](https://pt.
 
 ## The polynomial expression
 
-*In mathematics*, a polynomial expression is a ***function P*** that can be written in the following way:
+In mathematics, a polynomial expression is a ***function P*** that can be written in the following way:
 
     P(x) = ax^n + bx^(n-1) + cx^(n-2) + ... + kx^1 + lx^0
 
-* It's the sum of several terms, in which ***n*** is an non-negative integer (exponent/degree) and the number ***a***, ***b***, ***c***, ..., ***k***, ***l*** are constants (coefficients).
+* It's the sum of several terms, in which `n` is an non-negative integer (exponent/degree) and the number `a`, `b`, `c`, ..., `k`, `l` are constants (coefficients).
 
 * The ***function P(x)*** with just one term is known as a monomial expression, binomial for 2 and trinomial for 3. If it has more than 3 terms, it’s called a polynomial expression.
 
