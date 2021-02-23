@@ -93,7 +93,7 @@ Method                                                               | Action
 `public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Adds two polynomial expressions and returns a new expression.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions and returns a new expression.
 `public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions and returns a new expression.
-`public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression with an integer and returns a new expression.    
+`public static Polynomial operator * (Polynomial p1, int escalar)`   | Multiplies a polynomial expression by an integer and returns a new expression.    
 
 > Errors must be handled to ensure the application doesn’t close abruptly.
 
