@@ -89,7 +89,7 @@ Method                                                               | Action
 `public void RemoveTerm(int grau)`                                   | Removes from the polynomial expression the term with the degree that is equal to the argument.
 `public double Value(double x)`                                      | Calculates the real value of the expression for the received argument.
 `public override string ToString()`                                  | Returns the polynomial expression in a string like this:<br>`-2x^5 + 3x^2 – x + 6`.<br>· Use `^` to indicate exponent;<br>· The exponent `^1` must not appear in the string;<br>· The text `x^0` must not appear in the string.
-`public Polynomial Clone()`                                          | Creates a copy – a new expression, not a reference – of a polynomial expression.
+`public Polynomial Clone()`                                          | Creates a copy – not a reference – of a polynomial expression.
 `public static Polynomial operator + (Polynomial p1, Polynomial p2)` | Adds two polynomial expressions and returns a new expression.
 `public static Polynomial operator - (Polynomial p1, Polynomial p2)` | Subtracts two polynomial expressions and returns a new expression.
 `public static Polynomial operator * (Polynomial p1, Polynomial p2)` | Multiplies two polynomial expressions and returns a new expression.
