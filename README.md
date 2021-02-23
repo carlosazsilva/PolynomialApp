@@ -24,7 +24,7 @@ Incomplete 5th degree polynomial expression:
 
     Pb(x) = -2x^5 + 2x^2 - 5
 
-## Computationally
+## Computational representation
 
 There are some strategies to represent and handle polynomial expressions, being the most common the use of arrays to store the different coefficients of the polynomial. Using arrays, the previous polynomial expressions could have the following computational representation:
 
