@@ -131,7 +131,7 @@ Command                           | Action
 
 * Whenever a command is wrong or incomplete, you should present an informative message that helps the user solve the problem.
 
-* *For example*: if the user writes the command `save -d` and doesn’t provide a path, a message similar to this, should be presentes: “The command `save` is incomplete. You should associate a path to the parameter `-d`or just type `save` without any parameter."
+* *For example*: if the user writes the command `save -d` and doesn’t provide a path, a message similar to this, should be presented: “The command `save` is incomplete. You should associate a path to the parameter `-d`or just type `save` without any parameter."
 
 * If the user intents are not evident, a message should be displayed: “Command not recognized. Type help for the available parameters.”
 
